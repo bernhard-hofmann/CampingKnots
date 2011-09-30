@@ -5,9 +5,6 @@ img.step {
 }
 
 // Avoid header text truncation
-body .ui-li .ui-li-desc {
-	white-space: normal;
-}
 body .ui-footer .ui-title {
 	white-space: normal;
 }
@@ -18,5 +15,8 @@ body .ui-footer .ui-title {
 }
 .ui-li-heading {
 	font-size: 12px;
-	text-overflow:clip;
+}
+.ui-li-desc {
+	white-space: normal;
+	overflow:visible;
 }
