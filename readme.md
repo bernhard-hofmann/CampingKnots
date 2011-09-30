@@ -1,1 +1,1 @@
-This is a simple lock game.
+A little phone app with step-by-step instructions for some basic knots that are suitable around camp.
