@@ -12,6 +12,4 @@
 	</gap:platforms>
 
 	<feature name="http://api.phonegap.com/1.0/notification"/>
-	
-	<preference name="orientation" value="landscape" />
 </widget>
