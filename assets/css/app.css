@@ -5,13 +5,18 @@ img.step {
 }
 
 // Avoid header text truncation
-.ui-header, .ui-title, .ui-footer {
-	margin-right: 0 !important;
-	margin-left: 0 !important;
-}
 body .ui-li .ui-li-desc {
 	white-space: normal;
 }
 body .ui-footer .ui-title {
 	white-space: normal;
+}
+.ui-header, .ui-title, .ui-footer {
+	margin-right: 0 !important;
+	margin-left: 0 !important;
+	font-size: 12px;
+}
+.ui-li-heading {
+	font-size: 12px;
+	text-overflow:clip;
 }
