@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+	<title>Camping Knots</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="assets/css/app.css" />
+	<link rel="stylesheet" href="assets/css/jQueryMobile/jquery.mobile-1.0b3.min.css" />
+	<script type="text/javascript" src="assets/js/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.mobile-1.0b3.min.js"></script>
+
+	<script src="assets/js/phonegap-1.0.0.js" type="text/javascript" charset="utf-8"></script>
+
+	<script type="text/javascript" charset="utf-8">
+	function onLoad() {
+		document.addEventListener("deviceready", onDeviceReady, false);
+		setTimeout(giveupOnPhoneGap, 2000);
+	}
+
+	function onDeviceReady() {
+		console.log('PhoneGap device is ready. :)');
+		initApp();
+	}
+	
+	function giveupOnPhoneGap() {
+		console.warn('PhoneGap device not ready. Initializing regardless... :(');
+		initApp();
+	}
+	</script>
+</head>
+<body onload="onLoad()">
+	<div data-role="page" id="menu" data-title="Camping Knots" data-theme="a">
+		<div data-role="header"><h1>Camping Knots</h1></div>
+
+		<ul data-role="listview">
+			<li><a href="#figureEight">
+				<img src="assets/images/knots/thumbs/figureEight.jpg" title="Figure Eight"/>
+				<h3>Figure Eight</h3>
+				<p>A good stopper knot.</p>
+				</a>
+			</li>
+			<li><a href="#square">
+				<img src="assets/images/knots/thumbs/square.jpg" title="Square/Reef"/>
+				<h3>Square or Reef</h3>
+				<p>Good for joining equally thick ropes.</p>
+				</a>
+			</li>
+			<li><a href="#sheet">
+				<img src="assets/images/knots/thumbs/sheet.jpg" title="Sheet/Becket Bend"/>
+				<h3>Sheet/Becket Bend</h3>
+				<p>Good for joining rope of unequal thickness.</p>
+				</a>
+			</li>
+			<li><a href="#bowline">
+				<img src="assets/images/knots/thumbs/bowline.jpg" title="Bowline"/>
+				<h3>Bowline</h3>
+				<p>Good for tying rope around you.</p>
+				</a>
+			</li>
+			<li><a href="#clovehitch">
+				<img src="assets/images/knots/thumbs/clovehitch.jpg" title="Clove Hitch"/>
+				<h3>Clove Hitch</h3>
+				<p>Good for tying rope to a round post.</p>
+				</a>
+			</li>
+			<li><a href="#prusik">
+				<img src="assets/images/knots/thumbs/prusik.jpg" title="Prusik"/>
+				<h3>Prusik</h3>
+				<p>Moving knot that can put tension in a line.</p>
+				</a>
+			</li>
+			<li><a href="#butterfly">
+				<img src="assets/images/knots/thumbs/butterfly.jpg" title="Alpine Butterfly"/>
+				<h3>Alpine Butterfly</h3>
+				<p>Good for hanging things on a tight line.</p>
+				</a>
+			</li>
+		</ul>
+
+		<!-- TODO: Put about in the menu
+		<a data-role="button" data-transition="none" data-theme="b" href="#info">About</a>
+		-->
+	</div>
+
+	<div data-role="page" id="figureEight" data-title="Camping Knots:Figure Eight Knot" data-add-back-btn="true">
+		<div data-role="header"><h1>Figure Eight Knot</h1></div>
+		<div data-role="content">
+			<img src="assets/images/knots/FigureEight/1.jpg" class="step"><br/>
+			<img src="assets/images/knots/FigureEight/2.jpg" class="step"><br/>
+			<img src="assets/images/knots/FigureEight/3.jpg" class="step"><br/>
+			<img src="assets/images/knots/FigureEight/4.jpg" class="step"><br/>
+			<img src="assets/images/knots/FigureEight/5.jpg" class="step"><br/>
+		</div>
+	</div>
+
+
+
+	<div data-role="page" id="butterfly" data-title="Camping Knots:The Butterfly Knot" data-add-back-btn="true">
+		<div data-role="header"><h1>Alpine Butterfly Knot</h1></div>
+		<div data-role="content">
+			<img src="assets/images/knots/butterfly/1.jpg" class="step"><br/>
+			<img src="assets/images/knots/butterfly/2.jpg" class="step"><br/>
+			<img src="assets/images/knots/butterfly/3.jpg" class="step"><br/>
+			<img src="assets/images/knots/butterfly/4.jpg" class="step"><br/>
+			<img src="assets/images/knots/butterfly/5.jpg" class="step"><br/>
+			<img src="assets/images/knots/butterfly/6.jpg" class="step"><br/>
+			<img src="assets/images/knots/butterfly/7.jpg" class="step"><br/>
+		</div>
+	</div>
+
+	<div data-role="page" id="info">
+		<div data-role="Content" style="background:white;color:#234; padding:1em;">
+			<h1>Some useful knots around the camp</h1>
+			<div style="text-align:justify">
+				<p>These are some knots I've learnt from other people sharing their knowledge. Teach them to someone else and you'll know the joy of sharing knowledge.</p>
+			</div>
+			<hr noshade />
+			<p id="libraries">Built by Bernhard Hofmann<br/>
+				<img src="splash.png"><br/>
+				with <a href="http://www.phonegap.com/">PhoneGap</a> <span id="phoneGapVersion"></span><br/>
+				and <a href="http://jquerymobile.com/">jQuery Mobile</a>
+			</p>
+			<p id="deviceProperties" style="text-align:left;"></p>
+		</div>
+	</div>
+
+	<script src="assets/js/app.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
