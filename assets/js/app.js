@@ -4,10 +4,10 @@ function bizt() {
 	}
 }
 function onMenuKeyDown() {
-	$.mobile.changePage( "menu", { transition: "none"} );
+	$.mobile.changePage( $('#menu'), { transition: "none"} );
 }
 function onSearchKeyDown() {
-	$.mobile.changePage( "info", { transition: "none"} );
+	$.mobile.changePage( $('#info'), { transition: "none"} );
 }
 
 function initApp() {
