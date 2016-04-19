@@ -11,5 +11,7 @@
 		<gap:platform name="android" minVersion="2.1" />
 	</gap:platforms>
 
-	<feature name="http://api.phonegap.com/1.0/notification"/>
+	<feature name="Notification">
+		<param name="android-package" value="org.apache.cordova.Notification" />
+	</feature>
 </widget>
